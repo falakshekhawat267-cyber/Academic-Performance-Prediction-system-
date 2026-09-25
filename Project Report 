@@ -1,0 +1,468 @@
+               ________________
+
+                PROJECT REPORT
+   ACADEMIC PERFORMANCE PREDICTING SYSTEM
+              ________________
+
+
+
+
+
+
+
+
+
+
+SUBMITTED BY :-  Falak  Shekhawat [26BAC10011]
+PROJECT TITLE :- Academic Performance Predicting System
+LANGUAGE USED :  Python 3.x
+SUBMITTED TO :-  Dr. Anju Shukla
+SUBJECT:-       Python Essentials
+	
+
+
+
+
+
+ACADEMIC PERFORMANCE PREDICTION SYSTEM PROJECT REPORT
+
+
+1. INTRODUCTION
+
+
+Academic Performance Prediction System is a Python based
+console application designed to predict student's academic performance using a
+predefined mathematical scoring system.
+
+
+The application takes several academic factors as input including
+attendance, study hours, previous examination marks, assignment completion and internal marks.
+
+
+Each factor is assigned a specific weight based on assumed importance. The weighted values are combined to calculate an overall performance score between 0 and 100.
+
+
+Based on the calculated score, the application categorizes the student's performance as Excellent, Good, Average or Needs Improvement.
+
+
+This project is created using use of Python fundamentals such as input handling, arithmetic operations, conditional statements, variables and formatted output.
+
+
+2. OBJECTIVES
+
+
+The main objectives of this project are:
+
+
+1. To create a simple academic performance prediction system.
+2. To understand Python input and output operations.
+3. To use weighted mathematical calculations.
+4. To use conditional statements for decision making.
+5. To generate meaningful academic suggestions.
+6. To create an easier Python project.
+
+
+3. PROBLEM STATEMENT
+
+
+Student’s academic performance depends on multiple factors including
+attendance, study habits, previous marks, assignments and internal assessment.
+
+
+Manually evaluating all these factors can be time consuming.
+
+
+The objective of this project is to create a simple program that
+accepts these academic parameters, calculates a combined performance score and categorizes the result to provide suggestions for improvement.
+
+
+4. PROPOSED SYSTEM
+
+
+The proposed system uses a weight based scoring approach.
+
+
+The user enters the required academic information and the program
+processes the values using predefined weights to calculate an overall score.
+
+
+The score is compared with predefined thresholds to determine the performance category.
+
+
+The system also analyses individual academic parameters and displays suggestions when any parameter needs improvement. 
+
+
+5. INPUT PARAMETERS
+
+
+The system uses five major academic parameters.
+
+
+5.1 Attendance Percentage
+Attendance represents the percentage of classes attended by the
+student.
+
+
+Weight : 20%
+
+
+5.2 Average Study Hours
+This represents the student's average daily study time.
+
+
+The program considers 8 hours as the reference maximum and converts the entered study hours into a percentage.
+
+
+Weight : 15%
+
+
+5.3 Previous Exam Marks
+This represents the percentage obtained in a previous examination.
+
+
+Weight : 25%
+
+
+5.4 Assignment Completion
+This represents the percentage of assignments completed by the
+student.
+
+
+Weight : 15%
+
+
+5.5 Internal Marks
+This represents the student's internal assessment marks.
+
+
+Weight : 25%
+
+
+6. SYSTEM METHODOLOGY
+
+
+The system follows the following steps:
+
+
+Step 1:
+Accept the student's name.
+
+
+Step 2:
+Accept attendance percentage.
+
+
+Step 3:
+Accept average study hours per day.
+
+
+Step 4:
+Accept previous exam marks percentage.
+
+
+Step 5:
+Accept assignment completion percentage.
+
+
+Step 6:
+Accept internal marks percentage.
+
+
+Step 7:
+Convert study hours into a percentage.
+
+
+Step 8:
+Calculate the weighted performance score.
+
+
+Step 9:
+Ensure the score does not exceed 100.
+
+
+Step 10:
+Compare the score with predefined performance levels.
+
+
+Step 11:
+Display the predicted performance.
+
+
+Step 12:
+Check individual parameters and display suggestions.
+
+
+7. MATHEMATICAL FORMULA
+
+
+The performance score is calculated using:
+
+
+Score =Attendance × 0.20+ Study Hours Percentage × 0.15+ Previous Marks × 0.25+Assignment × 0.15+ Internal Marks × 0.25
+
+
+Study Hours Percentage:
+Study Hours Percentage =
+(Study Hours / 8) × 100
+
+
+Example:
+
+
+If a student studies for 5 hours per day:
+
+
+Study Hours Percentage =
+(5 / 8) × 100
+= 62.5%
+
+
+8. PERFORMANCE CLASSIFICATION
+
+
+The calculated score is classified as follows:
+
+
+85 or above:
+Excellent
+
+
+70 to below 85:
+Good
+
+
+55 to below 70:
+Average
+
+
+Below 55:
+Needs Improvement
+
+
+9. ALGORITHM
+
+
+1. Start.
+2. Display the project title.
+3. Read the student's name.
+4. Read attendance percentage.
+5. Read average study hours.
+6. Read previous examination marks.
+7. Read assignment completion percentage.
+8. Read internal marks.
+9. Calculate the study-hours percentage.
+10. Calculate the weighted performance score.
+11. Limit the score to 100 if necessary.
+12. Determine the performance category.
+13. Generate a performance message.
+14. Check attendance and provide a suggestion if required.
+15. Check study hours and provide a suggestion if required.
+16. Check previous marks and provide a suggestion if required.
+17. Check assignment completion and provide a suggestion if required.
+18. Check internal marks and provide a suggestion if required.
+19. Display the final result.
+20. End.
+
+
+10. FLOW OF THE SYSTEM
+
+
+START
+|
+v
+Enter Student Name
+|
+v
+Enter Academic Data
+|
+v
+Calculate Study Percentage
+|
+v
+Calculate Weighted Score
+|
+v
+Limit Score to 100
+|
+v
+Determine Performance Level
+|
+v
+Generate Performance Message
+|
+v
+Check Weak Parameters
+|
+v
+Generate Suggestions
+|
+v
+Display Final Result
+|
+v
+END
+
+
+11. PYTHON CONCEPTS USED
+
+
+The project demonstrates several fundamental Python concepts:
+
+
+- print() function
+- input() function
+- Variables
+- Floating-point numbers
+- Arithmetic operations
+- Weighted calculations
+- if statements
+- elif statements
+- else statements
+- Boolean variables
+- String variables
+- round() function
+- Formatted console output
+
+
+12. SAMPLE TEST CASE
+
+
+Input:
+
+
+Student Name:
+Falak
+
+
+Attendance:
+85
+
+
+Study Hours:
+5
+
+
+Previous Exam Marks:
+78
+
+
+Assignment Completion:
+90
+
+
+Internal Marks:
+82
+
+
+Calculation:
+
+
+Study Hours Percentage:
+(5 / 8) × 100 = 62.5
+
+
+Weighted Score:
+85 × 0.20
++ 62.5 × 0.15
++ 78 × 0.25
++ 90 × 0.15
++ 82 × 0.25
+
+
+= 17
++ 9.375
++ 19.5
++ 13.5
++ 20.5
+
+
+= 79.875
+
+
+Therefore, the displayed score is approximately:
+
+
+79.88%
+
+
+Performance:
+
+
+Good
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+13. ADVANTAGES
+
+
+1. Simple and easy to understand.
+2. Basic Python implementation.
+3. Does not require external libraries.
+4. Provides an immediate result.
+5. Gives suggestions for improvement.
+6. Uses multiple academic factors.
+7. Demonstrates practical use of conditional logic.
+
+
+14. LIMITATIONS
+
+
+1. The selected weights are predefined assumptions.
+2. The prediction depends on user provided information.
+3. The system currently works with one student at a time.
+4. It does not store student data permanently.
+5. It does not perform subject wise analysis.
+6. Input validation is limited.
+7. The result should be considered an educational estimate rather
+than a scientifically validated prediction.
+
+
+15. FUTURE SCOPE
+
+
+The project can be further developed by adding:
+
+
+1. Student login and authentication.
+2. Multiple student records.
+3. Subject-wise analysis.
+4. Graphs and charts.
+5. PDF report generation.
+6. CSV and Excel export.
+7. Attendance tracking.
+8. Historical performance comparison.
+9. Web application development.
+
+
+16. CONCLUSION
+
+
+Academic Performance Prediction System demonstrates how Python
+can be used to create a simple rule based academic evaluation application.
+
+
+The system combines multiple student performance factors using predefined weights to produce an overall score and performance category. It also provides suggestions based on areas where the student may need improvement.
+
+
+The project is useful for understanding Python programming fundamentals and provides a foundation for developing more advanced academic analysis systems in the future.
+
+
+17. REFERENCES
+
+
+1. Python Programming Language documentation.
+2. Basic concepts of conditional statements and arithmetic operations.
+3. Python input/output and variable handling concepts.
