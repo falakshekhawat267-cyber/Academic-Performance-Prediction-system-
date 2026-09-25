@@ -1,0 +1,137 @@
+ACADEMIC PERFORMANCE PREDICTION SYSTEM
+
+
+1. PROJECT DESCRIPTION :-
+The Academic Performance Prediction project is a simple Python console
+application that can predict a student’s academic performance.
+
+ It will calculate a student’s
+performance score based on his attendance, average study hours, previous
+exam marks, assignment submission, and internal marks.
+
+
+Once the score has been calculated, the student’s performance will be predicted
+as excellent, good, average, and needs improvement.
+
+
+2. FEATURES :-
+It has the following features:
+1. Take student details as input
+
+
+2. Calculate the performance score
+3. Convert the study hours into percentage
+4. Limit the score to 100%
+5. Predict the performance result
+6. Display performance related message
+7. Provide suggestions based on low scoring criteria
+8. Works in Python console
+
+
+3. INPUTS :-
+The following inputs will be provided:
+1. Student Name
+2. Attendance Percentage
+3. Average Study Hours Per Day
+4. Previous Exam Marks Percentage
+5. Assignment Completion Percentage
+6. Internal Marks Percentage
+4. WEIGHTAGE USED :-
+The student’s performance will be calculated using the following formula:
+Score = Attendance 0.2 + Study Hours % 0.15 + Previous Marks 0.25 + Assignment % 0.15 + Internal Marks 0.25
+Where the study hours percentage is calculated as study hours / 8 100.
+Using the calculated score, the student’s performance is predicted using the following ranges:
+Score >= 85
+Excellent
+Score >= 70 and < 85
+Good
+Score >= 55 and < 70
+Average
+Score < 55
+Needs Improvement
+
+
+5. SUGGESTION SYSTEM :-
+According to the inputs, the following suggestions will be made.
+If attendance is less than 75%,
+then improve the class attendance.
+If study hours per day is less than 3 hours,
+increase the average study hours.
+If previous exam marks percentage is less than 60%,
+focus more on improving the previous exam score.
+If assignment completion percentage is less than 70%,
+complete the assignments regularly.
+If internal marks percentage is less than 60%,
+focus more on improving the internal assessment score.
+Otherwise, keep up the good work!
+
+
+6. TECHNOLOGIES USED :-
+PROGRAMMING LANGUAGE-Python 3
+LIBRARIES-None
+REQUIREMENTS
+1. Python 3
+2. Any operating system that supports Python
+3. Terminal, VS Code, PyCharm, or any other Python IDE
+
+
+7. HOW TO RUN :-
+1. Install Python 3 if it is not already installed.
+2. Save the program in a file with the following name:
+academic_performance.py
+3. Open a terminal in the project folder.
+4. Run the following command:
+
+
+python academic_performance.py
+5. Enter the student details when prompted.
+6. It will display the result, message, and suggestions.
+8. SAMPLE INPUT :-
+Enter Student Name: Falak
+Enter Attendance Percentage: 85
+Enter Average Study Hours per Day: 5
+Enter Previous Exam Marks Percentage: 78
+Enter Assignment Completion Percentage: 90
+Enter Internal Marks Percentage: 82
+SAMPLE OUTPUT
+==============================================
+PREDICTION RESULT
+==============================================
+Student Name    : Falak
+Performance Score : 82.06 %
+Predicted Result  : Good
+Message      : The student is likely to perform well.
+Suggestions:
+- Keep up the good work!
+
+
+9. PROJECT STRUCTURE:-
+Academic-Performance-Prediction/
+|
+|-- academic_performance.py
+|-- README.txt
+|-- PROJECT_REPORT.txt
+
+10. LIMITATIONS:-
+1. This is a rule-based prediction system.
+2. The weightage assigned to each criterion may not be applicable to all educational institutions.
+3. The program depends on the accuracy of the information provided.
+4. This program is only for demo/educational purposes.
+5. It does not validate the input values. Negative percentage values will also be accepted.
+
+
+11. FUTURE ENHANCEMENTS:-
+This project can be enhanced by adding the following features:
+- Input validation
+- Database to store student records
+- Multiple student support
+- Graphical performance report
+- CSV/Excel export
+- Login system
+- Subject-wise performance analysis
+- History of performance
+- Web-based version
+
+
+AUTHOR:-
+Falak Shekhawat
